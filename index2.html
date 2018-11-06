@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Session 9</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+  <style type="text/css">
+    main {
+      height: calc(100vh - 56px); /* Permet à la carte d'être au centre de l'écran. */
+    }
+    main[v-cloak] {
+      display: none !important; /* Permet de ne rien afficher avant la fin du chargement */
+    }
+    main .card {
+      width: 45rem;
+    }
+  </style>
+
+<script type="text/javascript">
+  function carteDeReduction(monAge) {
+  if (monAge<=27 && monAge >=12) {
+    alert("Vous avez droit à la carte Jeunes 12-27")
+  } else if (monAge<12) {
+    alert ("Vous pouvez voyager gratuitement")
+  } else if (monAge >=60) {
+    alert ("Vous avez droit à une carte Senior")
+  } else {
+    alert ("Félicitations, vous n'avez droit à aucune réduction")
+  }
+}
+carteDeReduction (26)
+carteDeReduction (29)
